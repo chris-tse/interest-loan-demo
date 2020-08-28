@@ -1,0 +1,63 @@
+:root {
+	--text-main: #1a202c;
+	--text-secondary: #718096;
+	--text-secondary-darker: #4a5568;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+	background: #edf2f7;
+	color: var(--text-main);
+}
+
+body {
+	padding: 3rem;
+}
+
+main {
+	display: flex;
+}
+
+.fields {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-right: 1rem;
+}
+
+.fields .input-group {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 2rem 2rem 0;
+}
+
+.input-group label {
+	font-size: 0.8rem;
+	font-weight: lighter;
+	color: var(--text-secondary-darker);
+}
+
+.range-labels {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.8rem;
+	color: var(--text-secondary);
+}
+
+#initial-amount-display {
+	display: flex;
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+#initial-amount-display .dollar-sign {
+	font-size: 1.2rem;
+	margin-right: 0.5rem;
+	margin-top: 0.2rem;
+}
+
+#initial-amount-display .amount {
+	font-size: 2rem;
+}
+
+.slider {
+	margin: 0;
+}
