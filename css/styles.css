@@ -65,6 +65,19 @@ main {
 	margin: 0;
 }
 
+.row {
+	display: flex;
+}
+
+.period-selector p {
+	font-size: 0.9rem;
+	margin: 0 0 1rem 0;
+	color: var(--text-secondary-darker);
+}
+
+.input-group.period-selector {
+}
+
 .result {
 	color: var(--text-result);
 	flex: 1;
