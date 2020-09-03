@@ -39,8 +39,6 @@ function calculateFinalAmount() {
 	document.querySelector('.plural').innerHTML = years > 1 ? 's' : ''
 }
 
-// Define handlers
-
 /**
  * Sets the display value whenever slider is changed
  * @param {Event} event Slider change event
