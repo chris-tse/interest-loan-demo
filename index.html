@@ -17,33 +17,41 @@
 						<p id="initial-amount-display">
 							<span class="dollar-sign">$</span> <span class="amount"></span>
 						</p>
-						<input id="initial-amount" class="slider" type="range" min="100" max="50000" value="5000" />
+						<input
+							id="initial-amount"
+							class="slider"
+							type="range"
+							min="100"
+							max="50000"
+							step="100"
+							value="5000"
+						/>
 						<div class="range-labels"><span>$100</span><span>$50,000</span></div>
 					</div>
 					<div class="input-group">
-						<label for="interest-rate"> Interest rate: % </label>
-						<input id="interest-rate" type="number" min="0" max="20" step="0.01" />
+						<label for="interest-rate"> Interest rate (annual): % </label>
+						<input id="interest-rate" type="number" min="0" max="20" step="0.01" value="3.94" />
 					</div>
 					<div class="row">
 						<div class="input-group">
-							<label for="period">For how long:</label>
-							<input id="period" type="number" />
+							<label for="years">For how long (years):</label>
+							<input id="years" type="number" value="1" />
 						</div>
-						<div class="input-group period-selector">
-							<p>Time period</p>
+						<div class="input-group compound-selector">
+							<p>Compounding</p>
 							<div>
-								<input type="radio" id="months" name="period" value="months" checked />
-								<label for="months">Months</label>
+								<input type="radio" id="monthly" name="period" value="months" checked />
+								<label for="months">Monthly</label>
 							</div>
 							<div>
-								<input type="radio" id="years" name="period" value="years" />
-								<label for="years">Years</label>
+								<input type="radio" id="yearly" name="period" value="years" />
+								<label for="years">Yearly</label>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section class="result">
-					<p>After <span class="num-years">10</span> <span class="period-unit">years</span> you will have</p>
+					<p>After <span class="num-years">1</span> year<span class="plural">s</span>, you will have</p>
 					<p id="final-amount"><span class="dollar-sign">$</span><span class="amount">50,000</span></p>
 					<button class="calculate-button">Calculate</button>
 				</section>
