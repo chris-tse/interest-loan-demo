@@ -108,6 +108,7 @@ main {
 }
 
 .calculate-button {
+	cursor: pointer;
 	background: #e80000;
 	color: white;
 	border: 0;
@@ -116,4 +117,8 @@ main {
 	font-size: 1.2rem;
 	transform: translateY(75px);
 	box-shadow: 0 20px 25px -5px rgba(223, 21, 21, 0.37), 0 10px 10px -5px rgba(220, 21, 21, 0.64);
+}
+
+.calculate-button:hover {
+	background: #be0000;
 }
