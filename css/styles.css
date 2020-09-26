@@ -69,9 +69,13 @@ main {
 	display: flex;
 }
 
-.compound-selector p {
+.compound-selector {
+	border: 0;
+}
+
+.compound-selector legend {
 	font-size: 0.9rem;
-	margin: 0 0 1rem 0;
+	margin: 1rem 0 0 0;
 	color: var(--text-secondary-darker);
 }
 
